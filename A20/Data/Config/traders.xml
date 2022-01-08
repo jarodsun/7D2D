@@ -1267,7 +1267,7 @@ workstations
 	<!-- Trader 1, carries better armor -->
 	<!-- Trader Joel Note that all COUNTS are eventually multiplied by an item's EconomicBundleSize so "10 wood" in the list are "500 wood" on the trader. -->
 	<trader_info id="1" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20"
-		reset_interval="3" open_time="6:05" close_time="21:50">
+		reset_interval="3" open_time="12:01" close_time="12:00">
 		<trader_items count="all">
 			<item group="traderAlways"/>
 			<item group="traderGeneral" count="4,8"/>
@@ -1370,7 +1370,7 @@ workstations
 	</trader_info>
 	<!-- Trader Bob, id=6, carries more tools and vehicle parts at all levels -->
 	<trader_info id="6" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20"
-		reset_interval="3" open_time="6:05" close_time="21:50">
+		reset_interval="3" open_time="12:01" close_time="12:00">
 		<trader_items count="all">
 			<item group="tools" count="2" prob="1"/>
 			<item group="vehiclePartsMixed" count="2" prob="1"/>
@@ -1477,7 +1477,7 @@ workstations
 
 	<!-- Trader Jen, id=2, carries more medicine at all levels -->
 	<trader_info id="2" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20"
-		reset_interval="3" open_time="6:05" close_time="21:50">
+		reset_interval="3" open_time="12:01" close_time="12:00">
 		<trader_items count="all">
 			<item group="rareMedicine" count="2" prob="1"/>
 			<item group="medicine" count="2,5" prob="1"/>
@@ -1583,7 +1583,7 @@ workstations
 
 	<!-- Trader Hugh, id=7, carries more guns and ammo at all levels -->
 	<trader_info id="7" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20"
-		reset_interval="3" open_time="6:05" close_time="21:50">
+		reset_interval="3" open_time="12:01" close_time="12:00">
 		<trader_items count="all">
 			<item group="weaponsMeleeT0-1" count="2,4"/>
 			<item group="weaponsGunsT1" count="2"/>
@@ -1691,7 +1691,7 @@ workstations
 
 	<!-- Trader Rekt, id=8, carries more food, seeds farming stuff -->
 	<trader_info id="8" full_reset="true" min_inventory="30" max_inventory="70" min_items_swapped="20" max_items_swapped="20"
-		reset_interval="3" open_time="6:05" close_time="21:50">
+		reset_interval="3" open_time="12:01" close_time="12:00">
 		<trader_items count="all">
 			<item group="seeds" count="1,2" />
 			<item group="cannedfood" count="3,6"/>
