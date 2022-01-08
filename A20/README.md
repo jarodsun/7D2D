@@ -32,8 +32,8 @@
 
 ### 交易
 
-<passive_effect name="BarteringBuying" operation="base_add" value=".1"/>
-<passive_effect name="BarteringSelling" operation="base_add" value=".1"/>
+<passive_effect name="BarteringBuying" operation="base_add" value="1"/>
+<passive_effect name="BarteringSelling" operation="base_add" value="1"/>
 
 ### 制作时间
 
@@ -45,14 +45,19 @@
 
 ### 行走速度
 
-<passive_effect name="WalkSpeed" operation="base_set" value="1.65"/>
-<passive_effect name="WalkSpeed" operation="perc_add" value="2.35"/>
+<passive_effect name="WalkSpeed" operation="base_set" value="2"/>
+<passive_effect name="WalkSpeed" operation="perc_add" value="4"/>
 
 
 ### 跑步速度
 
 <passive_effect name="RunSpeed" operation="base_set" value="4"/>
-<passive_effect name="RunSpeed" operation="perc_add" value="2.35"/>
+<passive_effect name="RunSpeed" operation="perc_add" value="6"/>
+
+### 体力消耗
+
+<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="walking"/>
+<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
 
 ### 物理防御
 
@@ -68,11 +73,6 @@
 
 <passive_effect name="DegradationMax" operation="base_set" value="1000,6000" tier="1,6"/>
 <passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="heavyArmorDeg"/>
-
-### 体力消耗
-
-<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="walking"/>
-<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
 
 ### 噪音
 
