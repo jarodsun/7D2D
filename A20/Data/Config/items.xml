@@ -9371,14 +9371,14 @@ add knockdown resist to armor
 	<effect_group name="military armor">
 		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-		<passive_effect name="PhysicalDamageResist" operation="base_add" value="6.23,8.93"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="9999"/>
 		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
-		<passive_effect name="ElementalDamageResist" operation="base_add" value="6.23,8.93" tags="heat,electrical"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="9999" tags="heat,electrical"/>
 		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
-		<passive_effect name="BuffResistance" operation="base_add" value="0.05,0.061" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="200,400" tier="1,6"/>
-		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="lightArmorDeg"/>
-		<passive_effect name="Mobility" operation="perc_add" value="-.04"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="9999" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="9999" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="lightArmorDeg"/>
+		<passive_effect name="Mobility" operation="perc_add" value="1"/>
 		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0281" tags="walking"/>
 		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0562" tags="running"/>
 		<display_value name="dStaminaChangeOT" value="-.56"/>
@@ -10447,12 +10447,25 @@ perkNightStalkerSilentNight
 	<effect_group tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="100" tags="EconomicValue"/>
-		<passive_effect name="HypothermalResist" operation="base_add" value="1"/>
-		<passive_effect name="HyperthermalResist" operation="base_add" value="1,5"/>
-		<passive_effect name="LightMultiplier" operation="perc_add" value="-.07"><requirement name="!IsIndoors"/></passive_effect>
-		<passive_effect name="LightMultiplier" operation="perc_add" value="-.05"><requirement name="IsIndoors"/></passive_effect>
-		<display_value name="dLightMultiplier" value="-.07"/>
-		<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.05"/><display_value name="dNoiseMultiplier" value="-.05"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="100"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="100"/>
+		<passive_effect name="LightMultiplier" operation="perc_add" value="-1"><requirement name="!IsIndoors"/></passive_effect>
+		<passive_effect name="LightMultiplier" operation="perc_add" value="-1"><requirement name="IsIndoors"/></passive_effect>
+		<display_value name="dLightMultiplier" value="-1"/>
+		<passive_effect name="NoiseMultiplier" operation="perc_add" value="-1"/><display_value name="dNoiseMultiplier" value="-1"/>
+		<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="10"/>
+		<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="10"/>
+		<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="10"/>
+		<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="10"/>
+		<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="10"/>
+		<passive_effect name="BarteringBuying" operation="base_add" value="1"/>
+		<passive_effect name="BarteringSelling" operation="base_add" value="1"/>
+		<passive_effect name="CraftingTime" operation="perc_add" value="-1"/>
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="10"/>
+		<passive_effect name="WalkSpeed" operation="base_set" value="2"/>
+		<passive_effect name="RunSpeed" operation="base_set" value="4"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
 	</effect_group>
 </item>
 
