@@ -4312,6 +4312,16 @@ Kinda sorta works but is buggy and we don't have time for that.
 	<property name="DanceType" value="2" />
 </entity_class>
 
+<entity_class name="npcTraderFood" extends="npcTraderTemplate">
+	<property name="Tags" value="entity,npc,human,trader"/>
+	<property name="Mesh" value="#Entities/Traders?Prefabs/TraderJen.prefab"/>
+	<property name="NPCID" value="traderfood"/>
+	<property name="DanceType" value="2" />
+</entity_class>
+<!-- 修改的内容：
+name="npcTraderFood"，对应多语言文件
+name="NPCID" value="traderfood"，对应NPC文件中的ID -->
+
 <entity_class name="npcTraderTest" extends="npcTraderTemplate">
 	<property name="Tags" value="entity,npc,human,trader"/>
 	<property name="Mesh" value="#Entities/Traders?Prefabs/TraderJoel.prefab"/>
