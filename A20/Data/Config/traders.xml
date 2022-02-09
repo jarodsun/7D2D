@@ -1794,6 +1794,19 @@ workstations
 			<item name="drinkJarGrandpasForgettingElixir" count="1"/>
 		</tier_items>
 	</trader_info>
+	
+	<trader_info id="9" full_reset="true" min_inventory="50" max_inventory="500" min_items_swapped="50" max_items_swapped="500"
+		reset_interval="1" open_time="12:01" close_time="12:00">
+		<trader_items count="all">
+			<item group="foodSupplies" count="1" />
+		</trader_items>
+		<tier_items level="1,-1" count="all"> <!-- requires Perk 0-5 -->
+			<!-- Bug: The count is overridden by "all" anyway so all probabilities are =1 -->
+			<item group="weaponsGunsT3P" count="10"/>
+			<item group="modAllT5" count="10"/>
+			<item group="ammo" count="10"/>
+		</tier_items>
+	</trader_info>
 
 	<!-- Trader 2, carries better tools and construction material at higher levels. -->
 	<!-- Note that all COUNTS are eventually multiplied by an item's EconomicBundleSize so "10 wood" in the list are "500 wood" on the trader. -->
