@@ -190,7 +190,16 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="modGunT3" prob="0.15"/>
 			<item group="modArmorT3" prob="0.15"/>
 		</trader_item_group>
-
+		<trader_item_group name="modAllT5" count="1">
+			<item group="modMeleeT1" />
+			<item group="modGunT1" />
+			<item group="modArmorT1" />
+			<item group="modMeleeT2" />
+			<item group="modGunT2" />
+			<item group="modArmorT2" />
+			<item group="modGunT3" />
+			<item group="modArmorT3" />
+		</trader_item_group>
 		<trader_item_group name="bandanaAll">
 			<item name="apparelBandana"/>
 		</trader_item_group>
@@ -835,7 +844,16 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="gunExplosivesT3RocketLauncher" quality="2,3"/>
 			<item name="gunBotT3JunkDrone" prob="0.7" quality="2,3"/>
 		</trader_item_group>
-
+<trader_item_group name="weaponsGunsT3P">
+			<item name="gunHandgunT3SMG5" quality="6"/>
+			<item name="gunMGT3M60" quality="6"/>
+			<item name="gunHandgunT2Magnum44" quality="6"/>
+			<item name="gunHandgunT3DesertVulture" quality="6"/>
+			<item name="gunShotgunT3AutoShotgun" quality="6"/>
+			<item name="gunRifleT3SniperRifle" quality="6"/>
+			<item name="gunExplosivesT3RocketLauncher" quality="6"/>
+			<item name="gunBotT3JunkDrone" quality="6"/>
+		</trader_item_group>
 		<trader_item_group name="weaponsGunsT3QL5">
 			<item name="gunHandgunT3SMG5" prob="0.7" quality="2,5"/>
 			<item name="gunMGT3M60" quality="2,5"/>
