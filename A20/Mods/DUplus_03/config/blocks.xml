@@ -1,0 +1,4 @@
+<config>
+	<set xpath="blocks/block[@name='woodShapes']/property[@name='Material']/@value">Mbedrock</set>
+	<set xpath="blocks/block[@name='secureDoorWooden']/property[@name='Material']/@value">Mbedrock</set>
+</config>

@@ -1,0 +1,38 @@
+<configs>
+	<append xpath="traders/trader_item_groups">
+		<trader_item_group name="weaponsGunsT3P">
+			<item name="gunHandgunT3SMG5" quality="6"/>
+			<item name="gunMGT3M60" quality="6"/>
+			<item name="gunHandgunT2Magnum44" quality="6"/>
+			<item name="gunHandgunT3DesertVulture" quality="6"/>
+			<item name="gunShotgunT3AutoShotgun" quality="6"/>
+			<item name="gunRifleT3SniperRifle" quality="6"/>
+			<item name="gunExplosivesT3RocketLauncher" quality="6"/>
+			<item name="gunBotT3JunkDrone" quality="6"/>
+		</trader_item_group>
+		<trader_item_group name="modAllT5" count="1">
+			<item group="modMeleeT1" />
+			<item group="modGunT1" />
+			<item group="modArmorT1" />
+			<item group="modMeleeT2" />
+			<item group="modGunT2" />
+			<item group="modArmorT2" />
+			<item group="modGunT3" />
+			<item group="modArmorT3" />
+		</trader_item_group>
+	</append>
+	<append xpath="traders">
+		<trader_info id="9" full_reset="true" min_inventory="50" max_inventory="500" min_items_swapped="50" max_items_swapped="500"
+		reset_interval="1" open_time="12:01" close_time="12:00">
+			<trader_items count="all">
+				<item group="foodSupplies" count="1" />
+			</trader_items>
+			<tier_items level="1,-1" count="all">
+				<item group="weaponsGunsT3P" count="10"/>
+				<item group="modAllT5" count="10"/>
+				<item group="ammo" count="10"/>
+				<item group="rareMedicine" count="10"/>
+			</tier_items>
+		</trader_info>
+	</append>
+</configs>

@@ -1,0 +1,10 @@
+<config>
+	<append xpath="entity_classes">
+		<entity_class name="npcTraderGood" extends="npcTraderTemplate">
+			<property name="Tags" value="entity,npc,human,trader"/>
+			<property name="Mesh" value="#Entities/Traders?Prefabs/TraderJen.prefab"/>
+			<property name="NPCID" value="tradergood"/>
+			<property name="DanceType" value="2" />
+		</entity_class>
+	</append>
+</config>

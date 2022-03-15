@@ -1,0 +1,13 @@
+<config>
+	<append xpath="npc">
+		<npc_info
+		id="tradergood"
+		name="Trader Good"
+		name_key="npc_traderGood"
+		faction="whiteriver"
+		portrait="npc_jen"
+		greeting_type="nearby"
+		stance="Like" voice_set="trader_jen"
+		trader_id="9" dialog_id="trader" quest_faction="6" />
+	</append>
+</config>

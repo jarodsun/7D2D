@@ -1,0 +1,67 @@
+<configs>
+  <!-- 手枪：装填速度10倍，弹夹50，耐久消耗0，基础伤害9999 -->
+  <append xpath="items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']">
+    <passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="10" tags="perkGunslinger"/>
+  </append>
+  <set xpath="items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']/passive_effect[@name='MagazineSize' and @operation='base_set']/@value">50</set>
+  <set xpath="items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']/passive_effect[@name='DegradationPerUse' and @operation='base_set']/@value">0</set>
+  <append xpath="items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']">
+    <passive_effect name="EntityDamage" operation="base_set" value="9999" tags="perkGunslinger"/>
+  </append>
+  <!-- 塔萨的石斧：修理量5000，升级点一次，生物伤害99999，物块伤害99999，耐久消耗0，10倍采集量 -->
+  <append xpath="items/item[@name='meleeToolRepairT0TazasStoneAxe']">
+    <property class="Action1"> <!-- UseAction -->
+  		<property name="Class" value="Repair"/>
+  		<property name="Delay" value=".5"/> <!-- Repair actions still need the delay amount -->
+  		<property name="Repair_amount" value="5000"/>
+  		<property name="Upgrade_hit_offset" value="-5"/>
+  		<property name="Sound_start" value="repair_block"/>
+  		<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,cellarDoorDoubleIron,cellarDoorDoubleSteel,shuttersIronBlockVariantHelper,shuttersSteelBlockVariantHelper,resourceYuccaFibers,resourceCloth,resourceScrapPolymers"/>
+  		<property name="UsePowerAttackAnimation" value="false"/>
+  	</property>
+  </append>
+  <set xpath="items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">99999</set>
+  <set xpath="items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">99999</set>
+  <set xpath="items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='DegradationPerUse' and @operation='base_set']/@value">0</set>
+  <set xpath="items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='HarvestCount' and @operation='base_set']/@value">10</set>
+  <set xpath="items/item[@name='meleeToolRepairT0TazasStoneAxe']/effect_group[@name='meleeToolRepairT0TazasStoneAxe']/passive_effect[@name='HarvestCount' and @operation='base_set']/@tags">butcherHarvest,oreWoodHarvest</set>
+  <!-- 吉利服夹克：寒冷、炎热抗性50，可见性-0.5，噪音-0.5，力量、感知、强健、敏捷、智慧+10，买卖+100%，制造时间-1，经验值10倍 -->
+  <set xpath="items/item[@name='apparelGhillieSuitJacket']/effect_group[@tiered='false']/passive_effect[@name='HypothermalResist' and @operation='base_add']/@value">50</set>
+  <set xpath="items/item[@name='apparelGhillieSuitJacket']/effect_group[@tiered='false']/passive_effect[@name='HyperthermalResist' and @operation='base_add']/@value">50</set>
+  <remove xpath="items/item[@name='apparelGhillieSuitJacket']/effect_group[@tiered='false']/passive_effect[starts-with(@name, 'LightMultiplier')]"></remove>
+  <append xpath="items/item[@name='apparelGhillieSuitJacket']/effect_group[@tiered='false']">
+    <passive_effect name="LightMultiplier" operation="perc_add" value="-.5"><requirement name="!IsIndoors"/></passive_effect>
+		<passive_effect name="LightMultiplier" operation="perc_add" value="-.5"><requirement name="IsIndoors"/></passive_effect>
+  </append>
+  <set xpath="items/item[@name='apparelGhillieSuitJacket']/effect_group[@tiered='false']/passive_effect[@name='NoiseMultiplier' and @operation='perc_add']/@value">-.5</set>
+  <append xpath="items/item[@name='apparelGhillieSuitJacket']/effect_group[@tiered='false']">
+    <passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="10"/>
+		<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="10"/>
+		<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="10"/>
+		<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="10"/>
+		<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="10"/>
+		<passive_effect name="BarteringBuying" operation="base_add" value="1"/>
+		<passive_effect name="BarteringSelling" operation="base_add" value="1"/>
+		<passive_effect name="CraftingTime" operation="perc_add" value="-1"/>
+		<passive_effect name="PlayerExpGain" operation="perc_add" value="10"/>
+  </append>
+  <!-- 吉利服长裤：寒冷、炎热抗性50，可见性-0.5，噪音-0.5，行走速度2，跑步速度5，行走行走跑步恢复体力1-->
+  <set xpath="items/item[@name='apparelGhillieSuitPants']/effect_group[@tiered='false']/passive_effect[@name='HypothermalResist' and @operation='base_add']/@value">50</set>
+  <set xpath="items/item[@name='apparelGhillieSuitPants']/effect_group[@tiered='false']/passive_effect[@name='HyperthermalResist' and @operation='base_add']/@value">50</set>
+  <remove xpath="items/item[@name='apparelGhillieSuitPants']/effect_group[@tiered='false']/passive_effect[starts-with(@name, 'LightMultiplier')]"></remove>
+  <append xpath="items/item[@name='apparelGhillieSuitPants']/effect_group[@tiered='false']">
+    <passive_effect name="LightMultiplier" operation="perc_add" value="-.5"><requirement name="!IsIndoors"/></passive_effect>
+		<passive_effect name="LightMultiplier" operation="perc_add" value="-.5"><requirement name="IsIndoors"/></passive_effect>
+  </append>
+  <set xpath="items/item[@name='apparelGhillieSuitPants']/effect_group[@tiered='false']/passive_effect[@name='NoiseMultiplier' and @operation='perc_add']/@value">-.5</set>
+  <append xpath="items/item[@name='apparelGhillieSuitPants']/effect_group[@tiered='false']">
+		<passive_effect name="WalkSpeed" operation="base_set" value="2"/>
+		<passive_effect name="RunSpeed" operation="base_set" value="5"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="walking"/>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="1" tags="running"/>
+  </append>
+  <!-- 军用头盔：物防999，元素防999，不消耗耐久-->
+  <set xpath="items/item[@name='armorMilitaryHelmet']/effect_group[@name='military armor']/passive_effect[@name='PhysicalDamageResist' and @operation='base_add']/@value">999</set>
+  <set xpath="items/item[@name='armorMilitaryHelmet']/effect_group[@name='military armor']/passive_effect[@name='ElementalDamageResist' and @operation='base_add']/@value">999</set>
+  <set xpath="items/item[@name='armorMilitaryHelmet']/effect_group[@name='military armor']/passive_effect[@name='DegradationPerUse' and @operation='base_set']/@value">0</set>
+</configs>

@@ -1,0 +1,16 @@
+<config>
+	<append xpath="items">
+		<item name="questRewardT3SurvivalLegendaryBundle">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundlePistol"/>
+			<property name="CustomIconTint" value="FFFFFF"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="questRewardLegendaryRangedWeaponBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="meleeToolRepairT0TazasStoneAxe,gunHandgunT1Pistol,ammo9mmBulletBall,modDyePink,apparelGhillieSuitJacket,apparelGhillieSuitPants,armorMilitaryHelmet,modArmorHelmetLight"/>
+				<property name="Create_item_count" value="6,6,300,3,1,1,6,1"/>
+			</property>
+		</item>
+	</append>
+</config>

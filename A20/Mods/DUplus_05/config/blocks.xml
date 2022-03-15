@@ -1,0 +1,21 @@
+<config>
+	<append xpath="blocks">
+		<!-- spawnTraderGood，对应多语言文件 -->
+		<block name="spawnTraderGood">
+			<property name="Extends" value="metalTrussingRampOld" param1="DescriptionKey"/>
+			<property name="CustomIcon" value="metalTrussingRampOld"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Class" value="SpawnEntity"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Entities/Electrical/battery_bankPrefab"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="SpawnClass" value="npcTraderGood"/>
+			<!-- 修改value="npcTraderGood"，对应entityclasses.xml中的name -->
+			<property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+			<property name="Collide" value="sight"/>
+			<property name="IndexName" value="Trader"/>
+		</block>
+	</append>
+</config>

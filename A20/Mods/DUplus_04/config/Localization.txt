@@ -1,0 +1,2 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,schinese
+questRewardT3SurvivalLegendaryBundle,items,item,,,,生存大礼包,

@@ -1,0 +1,12 @@
+<configs>
+	<set xpath="traders/trader_info[@id='1']/@open_time">12:01</set>
+	<set xpath="traders/trader_info[@id='1']/@close_time">12:00</set>
+	<set xpath="traders/trader_info[@id='2']/@open_time">12:01</set>
+	<set xpath="traders/trader_info[@id='2']/@close_time">12:00</set>
+	<set xpath="traders/trader_info[@id='6']/@open_time">12:01</set>
+	<set xpath="traders/trader_info[@id='6']/@close_time">12:00</set>
+	<set xpath="traders/trader_info[@id='7']/@open_time">12:01</set>
+	<set xpath="traders/trader_info[@id='7']/@close_time">12:00</set>
+	<set xpath="traders/trader_info[@id='8']/@open_time">12:01</set>
+	<set xpath="traders/trader_info[@id='8']/@close_time">12:00</set>
+</configs>
